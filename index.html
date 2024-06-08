@@ -226,11 +226,13 @@
       <!-- Section 4 -->
       <section class="section-4" id="section-4">
         <h1 class="section-heading section-4-heading">Contact Me</h1>
-        <form class="contact-form center">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+        <form class="contact-form center" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="818a64d1-5da5-47fb-b39d-b8b26d0d2f98">
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="email" placeholder="Email" name="email" required/>
+          <textarea name="message" placeholder="Message" required></textarea>
           <input type="submit" value="Submit" class="contact-form-btn" />
+
         </form>
       </section>
       <!-- End of Section 4 -->
